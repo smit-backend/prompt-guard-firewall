@@ -1,0 +1,28 @@
+{
+    "name": "smit-backend/prompt-guard-firewall",
+    "description": "High-speed inline security gateway detecting prompt injection, recursive jailbreaks, system prompt exfiltration, and toxic inputs.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "smit-backend",
+            "email": "sync2sale@gmail.com",
+            "homepage": "https://github.com/smit-backend"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SmitBackend\\PromptShield\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SmitBackend\\PromptShield\\PackageServiceProvider"
+            ]
+        }
+    }
+}
